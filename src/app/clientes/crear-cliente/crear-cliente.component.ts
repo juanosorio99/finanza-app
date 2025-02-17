@@ -3,26 +3,35 @@ import { Component, OnInit } from '@angular/core';
 import { Cliente } from 'src/app/cliente';
 import { ClienteService } from 'src/app/cliente.service';
 import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 
 @Component({
   selector: 'app-crear-cliente',
+  standalone: true,
   templateUrl: './crear-cliente.component.html',
-  styleUrls: ['./crear-cliente.component.css']
+  styleUrls: ['./crear-cliente.component.css'],
+  imports: [CommonModule, HttpClientModule, FormsModule],
+  providers: [ClienteService]
 })
-export class CrearClienteComponent {
+export class CrearClienteComponent implements OnInit {
   cliente: Cliente = {} as Cliente;
 
   constructor(private clienteServicio: ClienteService,
     private enrutador: Router){
 
     }
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
 
     onSubmit(){
-      this.guardarProducto();
+      this.guardarCliente();
     }
 
-    guardarProducto(){
+    guardarCliente(){
       this.clienteServicio.agregarCliente(this.cliente).subscribe(
         {
           next: (datos) => {

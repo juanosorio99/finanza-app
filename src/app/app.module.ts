@@ -14,13 +14,13 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     ClientesComponent,
-    EditarClienteComponent,
-    CrearClienteComponent
+    EditarClienteComponent
+    /*CrearClienteComponent*/
   ],
   imports: [
     BrowserModule,
     RouterModule,
-    FormsModule,
+    FormsModule
   ],
   providers: [provideRouter(routes)],
   bootstrap: [AppComponent]

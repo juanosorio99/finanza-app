@@ -11,12 +11,12 @@
         </div>
         <div class="mb-3">
           <label for="apellidos" class="form-label">apellidos</label>
-          <input type="number" class="form-control" step="any" id="apellidos" 
+          <input type="text" class="form-control" step="any" id="apellidos" 
           name="apellidos" [(ngModel)]="cliente.apellidos">
         </div>
         <div class="mb-3">
             <label for="tipoIdentificacion" class="form-label">tipoIdentificacion</label>
-            <input type="number" class="form-control" id="tipoIdentificacion" 
+            <input type="text" class="form-control" id="tipoIdentificacion" 
             name="tipoIdentificacion" [(ngModel)]="cliente.tipoIdentificacion">
         </div>
         <div class="mb-3">
@@ -26,12 +26,12 @@
         </div>
         <div class="mb-3">
             <label for="correoElectronico" class="form-label">correoElectronico</label>
-            <input type="number" class="form-control" id="correoElectronico" 
+            <input type="email" class="form-control" id="correoElectronico" 
             name="correoElectronico" [(ngModel)]="cliente.correoElectronico">
         </div>
         <div class="mb-3">
             <label for="fechaNacimiento" class="form-label">fechaNacimiento</label>
-            <input type="number" class="form-control" id="fechaNacimiento" 
+            <input type="date" class="form-control" id="fechaNacimiento" 
             name="fechaNacimiento" [(ngModel)]="cliente.fechaNacimiento">
         </div>
         <div class="text-center">
