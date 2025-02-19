@@ -1,0 +1,42 @@
+<div class="container">
+ 
+        <h3>Editar Producto</h3>
+    
+    <form (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+            <label for="nombres" class="form-label">nombres </label>
+            <input type="text" class="form-control" id="nombres" required="true" 
+            name="nombres" [(ngModel)]="cliente.nombres">
+          </div>
+          <div class="mb-3">
+            <label for="apellidos" class="form-label">apellidos</label>
+            <input type="text" class="form-control" step="any" id="apellidos" 
+            name="apellidos" [(ngModel)]="cliente.apellidos">
+          </div>
+          <div class="mb-3">
+              <label for="tipoIdentificacion" class="form-label">tipoIdentificacion</label>
+              <input type="text" class="form-control" id="tipoIdentificacion" 
+              name="tipoIdentificacion" [(ngModel)]="cliente.tipoIdentificacion">
+          </div>
+          <div class="mb-3">
+              <label for="numeroIdentificacion" class="form-label">numeroIdentificacion</label>
+              <input type="number" class="form-control" id="numeroIdentificacion" 
+              name="numeroIdentificacion" [(ngModel)]="cliente.numeroIdentificacion">
+          </div>
+          <div class="mb-3">
+              <label for="correoElectronico" class="form-label">correoElectronico</label>
+              <input type="email" class="form-control" id="correoElectronico" 
+              name="correoElectronico" [(ngModel)]="cliente.correoElectronico">
+          </div>
+          <div class="mb-3">
+              <label for="fechaNacimiento" class="form-label">fechaNacimiento</label>
+              <input type="date" class="form-control" id="fechaNacimiento" 
+              name="fechaNacimiento" [(ngModel)]="cliente.fechaNacimiento">
+          </div>
+          <div class="text-center">
+              <button type="submit" class="btn btn-warning btn-sm me-3">Guardar</button>
+              <a href="/" class="btn btn-danger btn-sm">Regresar</a>
+          </div>
+    
+      </form>
+</div>

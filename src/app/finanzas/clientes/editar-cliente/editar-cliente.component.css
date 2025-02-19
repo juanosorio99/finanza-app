@@ -1,0 +1,85 @@
+/* Contenedor principal */
+.container {
+    max-width: 600px;
+    background: #fff;
+    padding: 30px;
+    margin: 50px auto;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Título */
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilo general de las etiquetas */
+.form-label {
+    font-weight: bold;
+    color: #444;
+}
+
+/* Inputs */
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* Botones */
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Botón Guardar */
+.btn-warning {
+    background: #ff9800;
+    color: white;
+    border: none;
+}
+
+.btn-warning:hover {
+    background: #e68900;
+    transform: scale(1.05);
+}
+
+/* Botón Regresar */
+.btn-danger {
+    background: #e74c3c;
+    color: white;
+    border: none;
+}
+
+.btn-danger:hover {
+    background: #c0392b;
+    transform: scale(1.05);
+}
+
+/* Alineación de los botones */
+.text-center {
+    margin-top: 20px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+    
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

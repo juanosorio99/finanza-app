@@ -1,7 +1,7 @@
 <div class="container">
 
     <div class="container text-center" style="margin: 30px">
-        <h3>Agegar Producto</h3>
+        <h3>Agegar Cliente</h3>
     </div>
     <form (ngSubmit)="onSubmit()">
         <div class="mb-3">
@@ -25,9 +25,13 @@
             name="numeroIdentificacion" [(ngModel)]="cliente.numeroIdentificacion">
         </div>
         <div class="mb-3">
-            <label for="correoElectronico" class="form-label">correoElectronico</label>
+            <label for="correoElectronico" class="form-label">Correo Electrónico</label>
             <input type="email" class="form-control" id="correoElectronico" 
-            name="correoElectronico" [(ngModel)]="cliente.correoElectronico">
+                   name="correoElectronico" [(ngModel)]="cliente.correoElectronico" 
+                   #correo="ngModel" required>
+            <div *ngIf="correo.invalid && correo.touched" class="text-danger">
+                Ingresa un correo electrónico válido.
+            </div>
         </div>
         <div class="mb-3">
             <label for="fechaNacimiento" class="form-label">fechaNacimiento</label>

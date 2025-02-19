@@ -1,0 +1,67 @@
+/* Navbar - Encabezado */
+.navbar {
+    background: linear-gradient(135deg, #d8790d, #b69505);
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Logo del sistema */
+.navbar-brand {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+    color: #f1c40f;
+    transform: scale(1.05);
+}
+
+/* Botón de menú en dispositivos pequeños */
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Estilos para los enlaces del menú */
+.navbar-nav .nav-item {
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f1c40f;
+    transform: translateY(-2px);
+}
+
+/* Link activo */
+.navbar-nav .nav-link.active {
+    font-weight: 700;
+    color: #f1c40f;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+    
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 15px;
+    }
+}
