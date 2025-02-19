@@ -1,1 +1,32 @@
-<p>productos works!</p>
+<h2>Lista de Productos</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Cliente ID</th>
+      <th>Tipo</th>
+      <th>Número</th>
+      <th>Estado</th>
+      <th>Saldo</th>
+      <th>GMF</th>
+      <th>Fecha Creación</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let producto of productos">
+      <td>{{ producto.id }}</td>
+      <td>{{ producto.clienteId }}</td>
+      <td>{{ producto.tipoCuenta }}</td>
+      <td>{{ producto.numeroCuenta }}</td>
+      <td>{{ producto.estado }}</td>
+      <td>{{ producto.saldo | currency }}</td>
+      <td>{{ producto.exentaGMF ? 'Sí' : 'No' }}</td>
+      <td>{{ producto.fechaCreacion }}</td>
+      <button [routerLink]="['/editar', producto.id]" class="btn btn-warning btn-sm me-2">
+        <i class="bi bi-pencil-fill"></i> Editar
+      </button>
+     <button (click)="eliminarProducto(producto.id)" class="btn btn-danger btn-sm">Eliminar</button>
+    </tr>
+  </tbody>
+</table>

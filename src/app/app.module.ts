@@ -11,6 +11,7 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { FinanzasComponent } from './finanzas/finanzas.component';
 import { ProductosComponent } from './finanzas/productos/productos.component';
+import { EditarProductoComponent } from './finanzas/productos/editar-producto/editar-producto.component';
 
 
 
@@ -20,7 +21,8 @@ import { ProductosComponent } from './finanzas/productos/productos.component';
     ClientesComponent,
     EditarClienteComponent,
     FinanzasComponent,
-    ProductosComponent
+    ProductosComponent,
+    EditarProductoComponent
     
     /*CrearClienteComponent*/
   ],
