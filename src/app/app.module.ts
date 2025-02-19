@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FinanzasComponent } from './finanzas/finanzas.component';
 import { ProductosComponent } from './finanzas/productos/productos.component';
 import { EditarProductoComponent } from './finanzas/productos/editar-producto/editar-producto.component';
+import { CrearProductoComponent } from './finanzas/productos/crear-producto/crear-producto.component';
 
 
 
@@ -22,7 +23,8 @@ import { EditarProductoComponent } from './finanzas/productos/editar-producto/ed
     EditarClienteComponent,
     FinanzasComponent,
     ProductosComponent,
-    EditarProductoComponent
+    EditarProductoComponent,
+    CrearProductoComponent
     
     /*CrearClienteComponent*/
   ],

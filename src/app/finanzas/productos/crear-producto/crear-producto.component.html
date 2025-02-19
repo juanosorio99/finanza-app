@@ -1,0 +1,45 @@
+<div class="container">
+
+    <div class="container text-center" style="margin: 30px">
+        <h3>Agegar Producto </h3>
+    </div>
+    <form (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <label for="clienteId" class="form-label">Id de cliente </label>
+          <input type="number" class="form-control" id="IdCliente" required="true" 
+          name="clienteId" [(ngModel)]="producto.clienteId">
+        </div>
+        <div class="mb-3">
+            <label for="tipoCuenta" class="form-label">Tipo de cuenta</label>
+            <select class="form-control" id="tipoCuenta" name="tipoCuenta" [(ngModel)]="producto.tipoCuenta">
+                <option value="ahorros">ahorros</option>
+                <option value="corriente">corriente</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="estado" class="form-label">Estado de la cuenta</label>
+            <select type="text" class="form-control" id="estado" 
+            name="estado" [(ngModel)]="producto.estado">
+                 <option value="ahorros">Activa</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="saldo" class="form-label">saldo</label>
+            <input type="number" class="form-control" id="saldo" 
+            name="saldo" [(ngModel)]="producto.saldo">
+        </div>
+       <div class="mb-3">
+            <label for="exentaGMF" class="form-label">¿Exenta GMF?</label>
+            <select class="form-control" id="exentaGMF" name="exentaGMF" [(ngModel)]="producto.exentaGMF">
+                <option [value]="true">Sí</option>
+                <option [value]="false">No</option>
+            </select>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-warning btn-sm me-3">Crear</button>
+            <a href="/" class="btn btn-danger btn-sm">Regresar</a>
+        </div>
+    
+      </form>
+</div>
+
